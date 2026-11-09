@@ -73,7 +73,7 @@ jobs:
           CONTEXT: ${{ runner.os }}-py${{ matrix.python-version }}
       - name: CodSpeed benchmarks
         if: matrix.codspeed == 'codspeed'
-        uses: CodSpeedHQ/action@v4
+        uses: CodSpeedHQ/action@v5
         env:
             COVERAGE_FILE: coverage/.coverage.${{ runner.os }}-py${{ matrix.python-version }}
             CONTEXT: ${{ runner.os }}-py${{ matrix.python-version }}
